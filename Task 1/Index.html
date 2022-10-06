@@ -18,11 +18,20 @@
         <h1 class="headline">Weight Converter</h1>
         <!-- Users input -->
         <form>
-          <input type="text" id="search" placeholder="Enter kilograms..." />
-          <input type="submit" id="submit-btn" value="Calculate" />
+          <input type="text" id="search" placeholder="Enter kilograms..."
+          onimput="weightConverter(this.value)"
+          onchange="weightConverter(this.value)"
+          />
+          <input type="submit" id="submit-btn" value="Calculate"/>
         </form>
         <!-- Place for output after form submission -->
-        <div id="output"></div>
+        <form id="result">
+          <div id="output">
+            <div>Pounds: <span id="outputPounds"></span></div>
+            <div>Grams: <span id="outputGrams"></span></div>
+            <div>Oz: <span id="outputOz"></span></div>
+          </div>
+        </form>
       </div>
     </main>
 

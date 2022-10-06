@@ -8,3 +8,10 @@ pamatyti jo pateikto svorio kovertavimą į:
 Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
+
+
+function weightConverter(value) {
+    document.getElementById("outputPounds").innerHTML=value*2.2046;
+    document.getElementById("outputGrams").innerHTML=value/0.001;
+    document.getElementById("outputOz").innerHTML=value*35.274;
+  }

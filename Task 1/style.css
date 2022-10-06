@@ -63,3 +63,43 @@ form {
     font-size: 2em;
   }
 }
+#output {
+  max-width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2em;
+  background-color: rgb(174, 255, 0);
+}
+/* #outputPounds {
+  max-width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2em;
+  background-color: rgb(174, 255, 0);
+}
+#outputGrams {
+  max-width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2em;
+  background-color: rgb(174, 255, 0);
+}
+#outputOz {
+  max-width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2em;
+  background-color: rgb(174, 255, 0); */
+/* } */
+#result {
+  max-width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2em;
+  background-color: rgb(174, 255, 0);
+}
