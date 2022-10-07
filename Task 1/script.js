@@ -10,8 +10,18 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 ------------------------------------------------------------------- */
 
 
-function weightConverter(value) {
-    document.getElementById("outputPounds").innerHTML=value*2.2046;
-    document.getElementById("outputGrams").innerHTML=value/0.001;
-    document.getElementById("outputOz").innerHTML=value*35.274;
-  }
+const form = document.querySelector("form");
+
+      form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          const input = document.querySelector("input");
+              document.getElementById("outputPounds").innerHTML=input.value*2.2046;
+              document.getElementById("outputGrams").innerHTML=input.value/0.001;
+              document.getElementById("outputOz").innerHTML=input.value*35.274;
+          }
+      )
+      let enterInput = document.getElementById("submit-btn");
+              enterInput.addEventListener("keyup", function(event) {
+              document.getElementById("submit-btn").click();
+                }
+              )
