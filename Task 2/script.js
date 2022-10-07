@@ -12,3 +12,4 @@ button.onclick = function() {
   count += 1;
   skaiciavimas.innerHTML = count;
 };
+// finished
