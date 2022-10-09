@@ -17,4 +17,4 @@ function Calculator(first, second) {
 const suma = function sum(){
     firstNumber + secondNumber
 }
-console.log(suma)
+console.log(suma);
