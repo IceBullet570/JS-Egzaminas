@@ -10,16 +10,11 @@ division() - priima du skaičius ir grąžina jų dalybos rezultatą;
 let firstNumber = prompt("Pirmas skaicius?")
 let secondNumber = prompt("Antras skaicius?")
 
-function Calculator(firstNumber, secondNumber) {
-    function sum(){
-        firstNumber + secondNumber
-    }
-    // this.first = firstNumber
-    // this.second = secondNumber
-    // this.suma = function sum() {
-    //     return (
-    //     first + second)
-    // }
+function Calculator(first, second) {
+    this.firstNumber = first
+    this.secondNumber = second
 }
-Calculator(firstNumber, secondNumber)
-console.log(Calculator(firstNumber, secondNumber))
+const suma = function sum(){
+    firstNumber + secondNumber
+}
+console.log(suma)
