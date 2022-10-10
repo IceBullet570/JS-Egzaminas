@@ -21,7 +21,7 @@ const form = document.querySelector("form");
     }
   )
   let enterInput = document.getElementById("submit-btn");
-    enterInput.addEventListener("keyup", function(event) {
+      enterInput.addEventListener("keyup", function(e) {
       document.getElementById("submit-btn").click();
       }
     )
