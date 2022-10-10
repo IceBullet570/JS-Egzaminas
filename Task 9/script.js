@@ -10,16 +10,19 @@ class Movie {
     constructor(title, director, budget) {
         this.title = title
         this.director = director
-        this.budget = budget 
+        this.budget = budget
     }
     wasExpensive() {
-        if(Movie.budget > 100e6) {
+        if(this.budget > 100e6) {
         return "Brangus"
         } else {
             return "Pigus"
         }
     }
 }
-let myMovie = new Movie("Top Gun", "Joseph Kosinski", 17e7 )
+let myMovie = new Movie("Top Gun: Maverick", "Joseph Kosinski", 17e7 )
+let myMovie2 = new Movie("Minions: The Rise of Gru","Kyle Balda", 80e6 )
 console.log(myMovie)
 console.log(myMovie.wasExpensive())
+console.log(myMovie2)
+console.log(myMovie2.wasExpensive())
