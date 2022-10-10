@@ -7,14 +7,29 @@ division() - priima du skaičius ir grąžina jų dalybos rezultatą;
 ------------------------------------------------------------------------------------ */
 
 
+// let firstNumber = prompt("Pirmas skaicius?")
+// let secondNumber = prompt("Antras skaicius?")
+
+function Calculator(first, second) {
+    this.sum = function() {
+        return +first + +second
+    }
+    this.substraction = function() {
+        return +first - +second
+    }
+    this.multiplication = function() {
+        return +first * +second
+    }
+    this.division = function() {
+        return (+first / +second).toFixed(2)
+    }
+}
+
 let firstNumber = prompt("Pirmas skaicius?")
 let secondNumber = prompt("Antras skaicius?")
 
-function Calculator(first, second) {
-    this.firstNumber = first
-    this.secondNumber = second
-}
-const suma = function sum(){
-    firstNumber + secondNumber
-}
-console.log(suma);
+const skaiciai = new Calculator(firstNumber, secondNumber)
+console.log(skaiciai.sum())
+console.log(skaiciai.substraction())
+console.log(skaiciai.multiplication())
+console.log(skaiciai.division())
