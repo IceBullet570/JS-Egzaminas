@@ -14,6 +14,7 @@ function cars() {
   fetch(ENDPOINT)
     .then((response) => response.json())
     .then((result) => {
+
       for (let i = 0; i < result.length; i++) {
         const createCard = document.createElement("div");
         createCard.style = "border: 1px solid black; border-radius: 5px; width: 90%; margin: 10px"
@@ -27,6 +28,7 @@ function cars() {
         createCard.appendChild(carModel);
         output.appendChild(createCard);
       }
+
     });
 }
 cars();
